@@ -1,0 +1,353 @@
+on="1.0">
+<category>
+    <pattern>TEST</pattern>
+    <that></that>
+    <template>test</template>
+</category>
+<category>
+    <pattern>AM NEVOIE DE INFO DESPRE *</pattern>
+    <that></that>
+    <template>Te pot ajuta cu informatii despre
+        <star/>
+    </template>
+</category>
+<category>
+    <pattern>*</pattern>[thatpattern]
+    <template>Doresti sa cunosti informatii despre
+        <random>
+            <li>pret</li>
+            <li>plata in rate</li>
+        </random>?</template>
+</category>
+<category>
+    <pattern>*</pattern>[thatpattern]
+    <template>Pretul produsului il poti verifica pe www.emag.ro</template>
+</category>
+<category>
+    <pattern>*</pattern>[thatpattern]
+    <template>Poti plati in rate prin Card Avantaj sau Cetelem. Despre care dintre ele doresti mai multe informatii ?</template>
+</category>
+<category>
+    <pattern>*DATE*FACTURARE*</pattern>
+    <that></that>
+    <template>In cazul in care comanda este finalizata, modificarea datelor de facturare presupune stornarea facturii initiale si emiterea unei noi facturi. Refacturarea se poate face doar in cadrul aceleiasi luni contabile si doar pentru facturile ce depasesc valoarea de 500 RON. Pentru a solicita o refacturare, completeaza formularul disponibil, aici : http://www.emag.ro/info/form/reclamatii-sesizari, atat cu datele comenzii ce trebuie refacute, cat si cu noile date de facturare</template>
+</category>
+<category>
+    <pattern>*DATE*FACTURARE</pattern>
+    <that></that>
+    <template>In cazul in care comanda este finalizata, modificarea datelor de facturare presupune stornarea facturii initiale si emiterea unei noi facturi. Refacturarea se poate face doar in cadrul aceleiasi luni contabile si doar pentru facturile ce depasesc valoarea de 500 RON. Pentru a solicita o refacturare, completeaza formularul disponibil, aici : http://www.emag.ro/info/form/reclamatii-sesizari, atat cu datele comenzii ce trebuie refacute, cat si cu noile date de facturare</template>
+</category>
+<category>
+    <pattern>DATE FACTURARE</pattern>
+    <that></that>
+    <template>In cazul in care comanda este finalizata, modificarea datelor de facturare presupune stornarea facturii initiale si emiterea unei noi facturi. Refacturarea se poate face doar in cadrul aceleiasi luni contabile si doar pentru facturile ce depasesc valoarea de 500 RON. Pentru a solicita o refacturare, completeaza formularul disponibil, aici : http://www.emag.ro/info/form/reclamatii-sesizari, atat cu datele comenzii ce trebuie refacute, cat si cu noile date de facturare</template>
+</category>
+<category>
+    <pattern>* REFACTURARE *</pattern>
+    <that></that>
+    <template>
+        <srai>date facturare</srai>
+    </template>
+</category>
+<category>
+    <pattern>SALUT</pattern>
+    <that></that>
+    <template>
+        <template>
+            <random>
+                <li>salut</li>
+                <li>hello</li>
+                <li>salutare</li>
+                <li>noroc</li>
+                <li>hai noroc</li>
+                <li>va salut</li>
+                <li>servus</li>
+                <li>bine v-am gasit</li>
+            </random>! Cu ce te pot ajuta?
+        </template>
+    </template>
+</category>
+<category>
+    <pattern>HELLO</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>* CARD CADOU * NU *</pattern>
+    <that></that>
+    <template>
+        <srai>neaplicare card cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>NEAPLICARE CARD CADOU</pattern>
+    <that></that>
+    <template>Daca ai incercat sa folosesti un card cadou razuibil asigura-te ca ai introdus parola corecta. Daca nu stii parola, intreaba persoana care ti-a oferit cardul cadou. Daca ai incercat sa aplici pe o comanda un card cadou castigat intr-o campanie, verifica daca produsul pe care vrei sa il comanzi face parte sau nu din categoriile participante la campanie. Daca produsul face parte din categoriile participante la campanie si nu reusesti sa aplici cardul cadou pentru plata comenzii, te rugam sa ne contactezi la numerele 021 200.52.00 / 0722.25.00.00.</template>
+</category>
+<category>
+    <pattern>SALUTARE</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>NOROC</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>HAI NOROC</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>BUNA SEARA</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>BUNA ZIUA</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>BUNA DIMINEATA</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>VA SALUT</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>SERVUS</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>SA TRAITI</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>AM PIERDUT CARDUL CADOU</pattern>
+    <that></that>
+    <template>Pentru recuperarea cardului cadou, completeaza Formularul de sugestii : http://www.emag.ro/info/form/reclamatii-sesizari, mentionand adresa de e-mail asociata contului tau din site. In baza solicitarii tale, un consultant va retrimite mesajul ce contine cardul cadou. Atentie, daca adresa de e-mail nu coincide cu cea asociata contului tau din site, cardul cadou nu va fi retrimis.</template>
+</category>
+<category>
+    <pattern>SARU MANA</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>BINE V-AM GASIT</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>SALVE</pattern>
+    <that></that>
+    <template>
+        <srai>salut</srai>
+    </template>
+</category>
+<category>
+    <pattern>* PIERDUT * CARDUL * CADOU *</pattern>
+    <that></that>
+    <template>
+        <srai>am pierdut cardul cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>PIERDUT * CARDUL * CADOU *</pattern>
+    <that></that>
+    <template>
+        <srai>am pierdut cardul cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>* PIERDUT * CARDUL * CADOU</pattern>
+    <that></that>
+    <template>
+        <srai>am pierdut cardul cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>PIERDUT * CARDUL * CADOU</pattern>
+    <that></that>
+    <template>
+        <srai>am pierdut cardul cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>PIERDUT CARDUL CADOU</pattern>
+    <that></that>
+    <template>
+        <srai>am pierdut cardul cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>* PIERDUT CARDUL CADOU *</pattern>
+    <that></that>
+    <template>
+        <srai>am pierdut cardul cadou</srai>
+    </template>
+</category>
+<category>
+    <pattern>GARANTIE PLUS * PRODUS IN SERVICE*</pattern>
+    <that></that>
+    <template>Completezi si ne trimiti formularul Pick-Up & Return : http://www.emag.ro/info/form/pickup , si in maximum 48 de ore lucratoare un curier va veni la tine si va ridica produsul defect.</template>
+</category>
+<category>
+    <pattern>DA</pattern>[thatpattern]
+    <template>Oki! Spune-mi cand preferi sa te contacteze (data si ora)?</template>
+</category>
+<category>
+    <pattern>* GARANTIE PLUS * DEFECT *</pattern>
+    <that></that>
+    <template>
+        <srai>GARANTIE PLUS * PRODUS IN SERVICE*</srai>
+    </template>
+</category>
+<category>
+    <pattern>GOSSIP</pattern>
+    <that></that>
+    <template>
+        <gossip/>
+    </template>
+</category>
+<category>
+    <pattern>*</pattern>
+    <that></that>
+    <template>
+        <srai>no_response</srai>
+    </template>
+</category>
+<category>
+    <pattern>DA</pattern>[thatpattern]
+    <template>Oki! Spune-mi cand preferi sa te contacteze (data si ora)?</template>
+</category>
+<category>
+    <pattern>GARANTIE PLUS PRODUS IN SERVICE</pattern>
+    <that></that>
+    <template>Completezi si ne trimiti formularul Pick-Up & Return: http://www.emag.ro/info/form/pickup , si in maximum 48 de ore lucratoare un curier va veni la tine si va ridica produsul defect.</template>
+</category>
+<category>
+    <pattern>PRODUS NOU DEFECT</pattern>
+    <that></that>
+    <template>Contacteaza-ne la numerele 0212005200, 0722250000, sau prin e-mail completand formularul disponibil in sectiunea Reclamatii & Sesizari : http://www.emag.ro/info/form/retur , si in functie de categoria din care face parte produsul tau iti vom indica solutia oportuna.</template>
+</category>
+<category>
+    <pattern>NU</pattern>[thatpattern]
+    <template>Ok! si eu ma pricep destul de bine :)</template>
+</category>
+<category>
+    <pattern>NU *</pattern>[thatpattern]
+    <template>Ok! si eu ma pricep destul de bine :)</template>
+</category>
+<category>
+    <pattern>* PRODUS * DEFECT *</pattern>
+    <that></that>
+    <template>Daca produsul cumparat este unul nou urmeaza instructiunile :
+        <sr>produs nou defect</sr>
+    </template>
+</category>
+<category>
+    <pattern>* PRODUS * DEFECT</pattern>
+    <that></that>
+    <template>Daca produsul cumparat este unul nou urmeaza instructiunile :
+        <srai>produs nou defect</srai>
+    </template>
+</category>
+<category>
+    <pattern>COMANDA ONLINE</pattern>
+    <that></that>
+    <template>Plasarea comenzii online prezinta o serie de avantaje: a) Comenzile poate fi inregistrate la orice ora, fiind preluate in ordinea inregistrarii lor; b) Rezervarea produselor se face automat la inregistrarea comenzii, daca acestea au statusul "In stoc''; c) Poti verifica direct din contul tau eMAG traseul comenzii de la inregistrarea ei pana la livrare. Toate acestea pe www.emag.ro</template>
+</category>
+<category>
+    <pattern>* COMANDA * INTERNET</pattern>
+    <that></that>
+    <template>
+        <srai>comanda online</srai>
+    </template>
+</category>
+<category>
+    <pattern>* COMANDA ONLINE *</pattern>
+    <that></that>
+    <template>
+        <srai>comanda online</srai>
+    </template>
+</category>
+<category>
+    <pattern>REZERVARE SHOWROOM</pattern>
+    <that></that>
+    <template>Produsele comandate sunt rezervate in Showroom pentru 72 de ore de la primirea e-mail-ului de livrare. Dupa expirarea celor 72 de ore, este posibil ca pretul sa sufere modificari, iar produsele sa nu mai fie disponibile.</template>
+</category>
+<category>
+    <pattern>* REZERVARE *</pattern>
+    <that></that>
+    <template>
+        <srai>rezervare showroom</srai>
+    </template>
+</category>
+<category>
+    <pattern>DATA LIVRARE</pattern>
+    <that></that>
+    <template>Pentru produsele vandute de eMAG, imediat ce predam curierului comanda ta vei primi un email care va contine data estimativa de livrare. Daca ai ales sa ridici comanda din showroom sau dintr-un punct de livrare, atunci cand produsele tale sunt pregatite, iti vom trimite un email cu data in care le poti ridica. De asemenea, poti urmari in orice clipa statusul comenzii tale intrand in contul de client eMAG, sectiunea Istoric comenzi : http://www.emag.ro/history/shopping . Daca ai comandat un produs vandut de catre un partener eMAG Marketplace, comanda ta va fi livrata prin curier in aproximativ 24-48 de ore. Termenul concret de livrare iti va fi comunicat de catre partenerul eMAG Marketplace.</template>
+</category>
+<category>
+    <pattern>*</pattern>[thatpattern]
+    <template>Am notat.
+        <star /> te va contacta un operator</template>
+</category>
+<category>
+    <pattern>* DATA * LIVRARE *</pattern>
+    <that></that>
+    <template>
+        <srai>data livrare</srai>
+    </template>
+</category>
+<category>
+    <pattern>* LIVRA *</pattern>
+    <that></that>
+    <template>
+        <srai>data livrare</srai>
+    </template>
+</category>
+<category>
+    <pattern>RETURNARE PRODUS CARD CADOU</pattern>
+    <that></that>
+    <template>Daca returul se efectueaza in perioada de valabilitate a cardului cadou, acesta se reactiveaza dupa emiterea facturii de stornare, si vei putea refolosi seria cardului cadou. Daca stornarea este efectuata dupa finalizarea perioadei de valabilitate, reducerea aferenta cardului cadou nu va mai fi disponibila.</template>
+</category>
+<category>
+    <pattern>* LIVRARE *</pattern>
+    <that></that>
+    <template>
+        <srai>date livrare</srai>
+    </template>
+</category>
+</aiml>
